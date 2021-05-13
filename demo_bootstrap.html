@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--để web hỗ trợ repspnsive,bắt buộc phải khai thêm thẻ meta sau
+	-->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="utf-8">
+	<title>demo bootstrap</title>
+	<!--tích hợp bootstrap-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<!--
+		1-khái niệm:
+		là thư viện tích hợp sẵn html,css,javascrip,cung cấp các component để có thể sử dụng luôn thông qua các class
+		+hỗ trợ xây dựng cấu trúc layout hàng, cột responsive
+		+các framework và cms của php như laravel,zend..
+		+học bootstrap là học layout và component của nó
+		2-cài đặt bootstrap
+		+tạo thư mục css/ngang hàng với file tại 
+		+search google:download bootstrap 4
+		+sau khi tải bootstrap về,copy file css/bootstrap.min.css,copy vào thư mục mới tạo
+		+nhúng file bootstrap.min.css đã nén dung lượng hết cỡ->ko edit file này
+		3-layout trong bootstrap
+	-->
+	<style type="text/css">
+		.col1{
+			background: blue;
+		}
+		.col2{
+			background: red;
+		}
+		.col3{
+			background: green;
+		}
+		.col4{
+			background: yellow;
+		}
+	</style>
+	<!--tạo layout như sau: chú ý bootstrap coi ipad và pc hiển thị giống nhau
+		trên ipad/pc:1 hàng 4 cột bằng nhau
+		trên mobile:2 hàng mỗi hàng 2 cột bằng nhau
+		-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-6 col1">nđ 1</div>
+			<div class="col-md-3 col-6 col2">nđ 2</div>
+			<div class="col-md-3 col-6 col3">nđ 3</div>
+			<div class="col-md-3 col-6 col4">nđ 4</div>
+		</div>
+	</div>
+	<!--4- component trong bootsteap:tham khảo trong phần components
+	-->
+	<div class="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+  This is a secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+  This is a success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+  This is a danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+  This is a warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+  This is a info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+  This is a light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+  This is a dark alert—check it out!
+</div>
+</body>
+</html>
